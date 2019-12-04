@@ -5,7 +5,8 @@ from urllib import request
 import  chardet
 
 if __name__ == '__main__':
-    response = request.urlopen("https://www.csdn.net/")
+    request_url = request.Request("https://www.csdn.net")
+    response = request.urlopen(request_url)
     html = response.read()
     chardet = chardet.detect(html)
     print(chardet['encoding'])
