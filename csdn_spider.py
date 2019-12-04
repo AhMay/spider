@@ -72,3 +72,15 @@ if __name__ == '__main__':
     # print(chardet['encoding'])
     # html = html.decode(chardet['encoding'])
     # print(html)
+
+    import  urllib.error
+    try:
+        urllib.request.urlopen('htt://www.baidu.com')
+    except urllib.error.URLError as e:
+        print(e.reason)
+
+    try:
+        urllib.request.urlopen('http://www.baidu.com/admin')
+    except urllib.error.HTTPError as e1:
+        print(e1.reason)
+        print(e1.code)
