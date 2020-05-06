@@ -103,16 +103,14 @@ def demoweb():
         result = json.loads(response.text)
         print('here')
 
-
-demoweb()
-
+from selenium import webdriver
+import os
+import time
 def test():
-        from selenium import webdriver
-        import os
-        import time
-        try:
-                browser = webdriver.Chrome()
-                browser.get(logon_url)
-                time.sleep(10)
-        except Exception as e:
-                print()
+        browser = webdriver.Chrome()
+        browser.maximize_window()
+        browser.get("http://glzx.yonghui.cn/newvssportal/login.html")
+        f = input('输入密码后输入任意字符')
+
+
+input("输入任意字符，继续下一个账户的订单内容获取。结束请关闭窗口....")

@@ -1,5 +1,0 @@
-('e:\\mayworld\\python\\envs\\pesi\\lib\\site-packages\\urllib3-1.25.8-py3.7.egg',
- None,
- {'*.pyc', '*.py', '*.pyd', 'EGG-INFO', '*.cp37-win_amd64.pyd', '*.pyw'},
- 'DATA',
- [])
